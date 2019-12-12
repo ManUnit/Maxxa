@@ -1,0 +1,51 @@
+// Copyright 2015 The go-ethereum Authors
+// This file is part of the go-ethereum library.
+//
+// The go-ethereum library is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Lesser General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// The go-ethereum library is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+// GNU Lesser General Public License for more details.
+//
+// You should have received a copy of the GNU Lesser General Public License
+// along with the go-ethereum library. If not, see <http://www.gnu.org/licenses/>.
+
+package params
+
+// MainnetBootnodes are the enode URLs of the P2P bootstrap nodes running on
+// the main Ethereum network.
+var MainnetBootnodes = []string{
+	// Ethereum Foundation Go Bootnodes
+	"enode://6be31db076192847099ae94def96a663dca24f5e9714591a038fcaf66f8932bab7567f152476d679d7d4c07731727f6c15534f5480d33fbc1e35669b7733e3e1@58.82.172.151:9921", // TH-BKK00
+	"enode://c1ea3471ba9f3df296449667832fc71629c87eca2e62ac22523da138fca80960c14ccbc167d6219a56c360ccf2c7913fbc33bcd512434bb4fbfda11922ee3543@94.237.76.120:9981", // UPcloud 2
+}
+
+// TestnetBootnodes are the enode URLs of the P2P bootstrap nodes running on the
+// Ropsten test network.
+var TestnetBootnodes = []string{
+	"enode://30b7ab30a01c124a6cceca36863ece12c4f5fa68e3ba9b0b51407ccc002eeed3b3102d20a88f1c1d3c3154e2449317b8ef95090e77b312d5cc39354f86d5d606@198.18.7.10:9921",    // US-Azure geth
+	"enode://865a63255b3bb68023b6bffd5095118fcc13e79dcf014fe4e47e065c350c7cc72af2e53eff895f11ba1bbb6a2b33271c1116ee870f266618eadfc2e78aa7349c@198.18.100.77:9921",  // US-Azure parity
+	"enode://6332792c4a00e3e4ee0926ed89e0d27ef985424d97b6a45bf0f23e51f0dcb5e66b875777506458aea7af6f9e4ffb69f43f3778ee73c81ed9d34c51c4b16b0b0f@198.18.243.152:9921", // Parity
+	"enode://94c15d1b9e2fe7ce56e458b9a3b672ef11894ddedd0c6f247e0f1d3487f52b66208fb4aeb8179fce6e3a749ea93ed147c37976d67af557508d199d9594c35f09@198.18.208.223:9921", // @gpip
+}
+
+// RinkebyBootnodes are the enode URLs of the P2P bootstrap nodes running on the
+// Rinkeby test network.
+var RinkebyBootnodes = []string{
+	"enode://a24ac7c5484ef4ed0c5eb2d36620ba4e4aa13b8c84684e1b4aab0cebea2ae45cb4d375b77eab56516d34bfbd3c1a833fc51296ff084b770b94fb9028c4d25ccf@198.18.42.101:9921", // IE
+	"enode://343149e4feefa15d882d9fe4ac7d88f885bd05ebb735e547f12e12080a9fa07c8014ca6fd7f373123488102fe5e34111f8509cf0b7de3f5b44339c9f25e87cb8@198.18.158.184:9921",  // INFURA
+	"enode://b6b28890b006743680c52e64e0d16db57f28124885595fa03a562be1d2bf0f3a1da297d56b13da25fb992888fd556d4c1a27b1f39d531bde7de1921c90061cc6@198.18.28.211:9921", // AKASHA
+}
+
+// DiscoveryV5Bootnodes are the enode URLs of the P2P bootstrap nodes for the
+// experimental RLPx v5 topic-discovery network.
+var DiscoveryV5Bootnodes = []string{
+	"enode://06051a5573c81934c9554ef2898eb13b33a34b94cf36b202b69fde139ca17a85051979867720d4bdae4323d4943ddf9aeeb6643633aa656e0be843659795007a@198.18.226.168:9921",
+	"enode://0cc5f5ffb5d9098c8b8c62325f3797f56509bff942704687b6530992ac706e2cb946b90a34f1f19548cd3c7baccbcaea354531e5983c7d1bc0dee16ce4b6440b@198.18.3.223:9924",
+	"enode://1c7a64d76c0334b0418c004af2f67c50e36a3be60b5e4790bdac0439d21603469a85fad36f2473c9a80eb043ae60936df905fa28f1ff614c3e5dc34f15dcd2dc@198.18.3.223:9926",
+	"enode://85c85d7143ae8bb96924f2b54f1b3e70d8c4d367af305325d30a61385a432f247d2c75c45c6b4a60335060d072d7f5b35dd1d4c45f76941f62a4f83b6e75daaf@198.18.3.223:9927",
+}
